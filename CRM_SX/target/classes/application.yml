@@ -1,0 +1,11 @@
+# 配置数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+# 配置mybatis-plus的xml文件扫描路径
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
